@@ -1,39 +1,37 @@
+import React from 'react';
 import {
-  Link as ChakraLink,
   Text,
   Center,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+} from '@chakra-ui/react';
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
 
-const Index = () => (
-  <Container height="100vh">
-    <Hero />
-    <Main>
+const Index: React.FC = () => (
+  <>
       <Text
-        bg="gray.800"
+        border="lavender solid 15px"
         p={2}
         borderRadius="full"
+        m={2}
       >
-        <Center>v v v v v v v v</Center>
+        <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
       </Text>
-    </Main>
-
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
-  </Container>
+      <Text
+        border="lavender solid 15px"
+        p={2}
+        borderRadius="full"
+        m={2}
+      >
+        <Center>routing goes here</Center>
+      </Text>
+      <Text
+        border="lavender solid 15px"
+        p={2}
+        borderRadius="full"
+        m={2}
+      >
+        <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
+      </Text>
+  </>
 )
 
 export default Index

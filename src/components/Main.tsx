@@ -1,13 +1,11 @@
-import { Stack, StackProps } from '@chakra-ui/react'
+import { Flex, FlexProps } from '@chakra-ui/react'
 
-export const Main = (props: StackProps) => (
-  <Stack
-    spacing="1.5rem"
-    width="100%"
-    maxWidth="48rem"
-    mt="-45vh"
-    pt="8rem"
-    px="1rem"
+export const Main = (props: FlexProps) => (
+  <Flex
+  direction="column"
+  alignItems="center"
+  justifyContent="flex-start"
+  p={4}
     {...props}
   />
 )

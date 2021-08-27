@@ -38,6 +38,11 @@ const Layout: React.FC = (props) => {
         <Stack
           p={1}
           direction={["column", "column", "row", "row"]}
+          justifyContent="center"
+          alignItems="center"
+          height="100vh"
+          bgGradient="linear(to-l, #7928CA, #FF0080)"
+          // bgClip="text"
         >
           <NavBar />
 

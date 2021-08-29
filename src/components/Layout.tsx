@@ -6,9 +6,6 @@ import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Main } from '../components/Main';
 import NavBar from './NavBar';
 
-
-
-
 const Layout: React.FC = (props) => {
   const { colorMode } = useColorMode();
   const bgColor = { light: 'gray.50', dark: 'gray.900' };

@@ -9,7 +9,9 @@ const NavBar: React.FC = () => {
   return (
     <>
       <Stack
-        p={1}
+        // p={1}
+        py={[1, 2, 10, 12]}
+        px={[12, 10, 2, 2]}
         direction={["row", "row", "column", "column"]}
         bg="blue.700"
         spacing={16}
@@ -25,7 +27,7 @@ const NavBar: React.FC = () => {
         <Flex>
           <Box>
           <IconButton 
-              aria-label="about"
+              aria-label="work"
               icon={<FaLaptopCode/>}
             />
           </Box>
@@ -33,7 +35,7 @@ const NavBar: React.FC = () => {
         <Flex>
           <Box>
             <IconButton 
-              aria-label="about"
+              aria-label="contact"
               icon={<FaMailBulk/>}
             />
           </Box>

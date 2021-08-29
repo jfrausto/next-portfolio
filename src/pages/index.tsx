@@ -2,11 +2,13 @@ import React from 'react';
 import {
   Text,
   Center,
+  Box
 } from '@chakra-ui/react';
 
 
 const Index: React.FC = () => (
   <>
+    <Box>
       <Text
         border="lavender solid 15px"
         p={2}
@@ -31,6 +33,7 @@ const Index: React.FC = () => (
       >
         <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
       </Text>
+    </Box>
   </>
 )
 

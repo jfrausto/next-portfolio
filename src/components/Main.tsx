@@ -5,9 +5,9 @@ export const Main = (props: FlexProps) => (
     direction="column"
     alignItems="center"
     justifyContent="center"
-    p={4}
+    // p={1}
     minH="90vh"
-    minW="75vw"
+    minW={["100vw", "75vw", "75vw", "75vw"]}
     bgGradient="linear(to-l, #1228AC, #F35FFD)"
     {...props}
   />

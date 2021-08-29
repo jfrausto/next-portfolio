@@ -10,8 +10,8 @@ const NavBar: React.FC = () => {
     <>
       <Stack
         // p={1}
-        py={[1, 2, 10, 12]}
-        px={[12, 10, 2, 2]}
+        // py={[1, 2, 10, 12]}
+        // px={[12, 10, 2, 2]}
         direction={["row", "row", "column", "column"]}
         bg="blue.700"
         spacing={16}

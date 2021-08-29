@@ -25,27 +25,28 @@ const Layout: React.FC = (props) => {
         direction="column"
         alignItems="center"
         justifyContent="flex-start"
+        px={[ 2, 4, 6, 8 ]}
       >
         <Hero />
       </Flex>
 
-      {/* container for navigation and main content */}
+      {/* flex container for nav and main routing content */}
       <Container>
-        {/* ? navigation ? */}
         <Stack
-          p={1}
+          px={[0, 0, 2, 2]}
           direction={["column", "column", "row", "row"]}
           justifyContent="center"
           alignItems="center"
           height="100vh"
-          bgGradient="linear(to-l, #7928CA, #FF0080)"
+          bgGradient="linear(to-r, #7928CA, #FFCCC0)"
           // bgClip="text"
         >
           <NavBar />
 
-        <Main>
-          {props.children}
-        </Main>
+          <Main> 
+            {/* flex container */}
+            {props.children}
+          </Main>
         {/* footer ?  */}
         </Stack>
       </Container>

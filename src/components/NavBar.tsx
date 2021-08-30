@@ -1,17 +1,18 @@
 import React from 'react';
 import { Flex, Stack, Box } from '@chakra-ui/layout';
 import { Button } from '@chakra-ui/button';
+import { useRouter } from 'next/router'
 import { IconButton } from '@chakra-ui/button';
 import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 
 
 const NavBar: React.FC = () => {
+
+  const router = useRouter();
+
   return (
     <>
       <Stack
-        // p={1}
-        // py={[1, 2, 10, 12]}
-        // px={[12, 10, 2, 2]}
         direction={["row", "row", "column", "column"]}
         bg="blue.700"
         spacing={16}
@@ -21,6 +22,10 @@ const NavBar: React.FC = () => {
             <IconButton 
               aria-label="about"
               icon={<FaMale/>}
+              onClick={ (e) => {
+                e.preventDefault()
+                router.push("/", "about", {scroll: false})
+              }}
             />
           </Box>
         </Flex>
@@ -29,6 +34,10 @@ const NavBar: React.FC = () => {
           <IconButton 
               aria-label="work"
               icon={<FaLaptopCode/>}
+              onClick={ (e) => {
+                e.preventDefault()
+                router.push("/portfolio", "portfolio", {scroll: false})
+              }}
             />
           </Box>
         </Flex>
@@ -37,6 +46,10 @@ const NavBar: React.FC = () => {
             <IconButton 
               aria-label="contact"
               icon={<FaMailBulk/>}
+              onClick={ (e) => {
+                e.preventDefault()
+                router.push("/contact", "contact", {scroll: false})
+              }}
             />
           </Box>
         </Flex>

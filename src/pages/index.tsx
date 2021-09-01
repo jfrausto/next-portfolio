@@ -15,7 +15,7 @@ const Index: React.FC = () => (
         borderRadius="full"
         m={2}
       >
-        <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
+        ^ ^ ^ ^ ^ ^ ^ ^^ ^ ^
       </Text>
       <Text
         border="lavender solid 15px"
@@ -23,7 +23,7 @@ const Index: React.FC = () => (
         borderRadius="full"
         m={2}
       >
-        <Center>routing goes here</Center>
+        me goes here
       </Text>
       <Text
         border="lavender solid 15px"
@@ -31,7 +31,7 @@ const Index: React.FC = () => (
         borderRadius="full"
         m={2}
       >
-        <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
+        ^ ^ ^ ^ ^ ^ ^ ^^ ^ ^
       </Text>
     </Box>
   </>

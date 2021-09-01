@@ -8,14 +8,14 @@ import {
 const Contact: React.FC = () => {
   return (
     <>
-          <Box>
+    <Box>
       <Text
         border="lavender solid 15px"
         p={2}
         borderRadius="full"
         m={2}
       >
-        <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
+        ^ ^ ^ ^ ^ ^ ^ ^^ ^ ^
       </Text>
       <Text
         border="lavender solid 15px"
@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
         borderRadius="full"
         m={2}
       >
-        <Center>CONTACT</Center>
+        contact goes here
       </Text>
       <Text
         border="lavender solid 15px"
@@ -31,10 +31,10 @@ const Contact: React.FC = () => {
         borderRadius="full"
         m={2}
       >
-        <Center>^ ^ ^ ^ ^ ^ ^ ^ ^</Center>
+        ^ ^ ^ ^ ^ ^ ^ ^^ ^ ^
       </Text>
     </Box>
-    </>
+  </>
   )
 }
 

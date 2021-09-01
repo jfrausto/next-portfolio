@@ -8,7 +8,11 @@ import { FaMale, FaLaptopCode, FaMailBulk } from 'react-icons/fa';
 
 const NavBar: React.FC = () => {
 
+
+
   const router = useRouter();
+
+  // console.log(router.pathname);
 
   return (
     <>
@@ -22,6 +26,8 @@ const NavBar: React.FC = () => {
             <IconButton 
               aria-label="about"
               icon={<FaMale/>}
+              variant="outline"
+              isActive={router.pathname === "/" ? true : false}
               onClick={ (e) => {
                 e.preventDefault()
                 router.push("/", "about", {scroll: false})
@@ -34,6 +40,8 @@ const NavBar: React.FC = () => {
           <IconButton 
               aria-label="work"
               icon={<FaLaptopCode/>}
+              variant="outline"
+              isActive={router.pathname === "/portfolio" ? true : false}
               onClick={ (e) => {
                 e.preventDefault()
                 router.push("/portfolio", "portfolio", {scroll: false})
@@ -46,6 +54,8 @@ const NavBar: React.FC = () => {
             <IconButton 
               aria-label="contact"
               icon={<FaMailBulk/>}
+              variant="outline"
+              isActive={router.pathname === "/contact" ? true : false}
               onClick={ (e) => {
                 e.preventDefault()
                 router.push("/contact", "contact", {scroll: false})

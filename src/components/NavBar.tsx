@@ -20,6 +20,8 @@ const NavBar: React.FC = () => {
         direction={["row", "row", "column", "column"]}
         bg="blue.700"
         spacing={16}
+        px={[2, 2, 4, 4]}
+        py={[2, 2, 2, 2]}
       >
         <Flex>
           <Box>
@@ -27,6 +29,7 @@ const NavBar: React.FC = () => {
               aria-label="about"
               icon={<FaMale/>}
               variant="outline"
+              isRound
               isActive={router.pathname === "/" ? true : false}
               onClick={ (e) => {
                 e.preventDefault()
@@ -41,6 +44,7 @@ const NavBar: React.FC = () => {
               aria-label="work"
               icon={<FaLaptopCode/>}
               variant="outline"
+              isRound
               isActive={router.pathname === "/portfolio" ? true : false}
               onClick={ (e) => {
                 e.preventDefault()
@@ -55,6 +59,7 @@ const NavBar: React.FC = () => {
               aria-label="contact"
               icon={<FaMailBulk/>}
               variant="outline"
+              isRound
               isActive={router.pathname === "/contact" ? true : false}
               onClick={ (e) => {
                 e.preventDefault()

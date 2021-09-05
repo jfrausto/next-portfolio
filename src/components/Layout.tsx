@@ -14,9 +14,10 @@ const Layout: React.FC = (props) => {
   return (
     <>
     <Box
-      height="200vh"
       bg={bgColor[colorMode]}
       color={color[colorMode]}
+      overflow="auto"
+      fontSize={["sm","md", "lg", "xl"]}
     >
       <DarkModeSwitch />
       {/* container for full page hero */}
@@ -37,8 +38,10 @@ const Layout: React.FC = (props) => {
           direction={["column", "column", "row", "row"]}
           justifyContent="center"
           alignItems="center"
-          height="100vh"
+          // height="100vh"
+          minW={["100vw", "100vw", "90vw", "90vw"]}
           bgGradient="linear(to-r, #7928CA, #FFCCC0)"
+
           // bgClip="text"
         >
           <NavBar />

@@ -30,7 +30,7 @@ const Portfolio: React.FC = () => {
         </Box>
         <Box
           // paddingX={6}
-          overflow="auto"
+          overflowY="auto"
           overflowX="hidden"
           maxH="80vh"
           maxW="1400px"

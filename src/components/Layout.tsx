@@ -39,7 +39,7 @@ const Layout: React.FC = (props) => {
           justifyContent="center"
           alignItems="center"
           // height="100vh"
-          minW={["100vw", "100vw", "90vw", "90vw"]}
+          minW="100vw"
           bgGradient="linear(to-r, #7928CA, #FFCCC0)"
 
           // bgClip="text"

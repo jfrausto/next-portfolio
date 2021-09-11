@@ -18,6 +18,11 @@ const Contact: React.FC = () => {
 
   return (
     <>
+    <Box
+      // justifyContent="flex-start"
+      // justifyItems="flex-start"
+    >
+
       <Box
         marginTop={1}
         marginX="auto"
@@ -78,6 +83,8 @@ const Contact: React.FC = () => {
           </WrapItem>
         </Wrap>
       </Container>
+    </Box>
+
     </>
   )
 }

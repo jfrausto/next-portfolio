@@ -9,6 +9,7 @@ import {
   budgetTrackTags,
   cryptickTags
 } from './ProjectTags';
+// import CustomScroller from 'react-custom-scroller';
 
 const PortfolioSection: React.FC = () => {
 
@@ -23,7 +24,8 @@ const PortfolioSection: React.FC = () => {
 
   return (
     <>
-      <Wrap spacing="30px" align="center" justify="center">
+      
+      <Wrap spacing="30px" align="center" justify="center" maxW="1000px">
           <WrapItem>
             <PortfolioCard 
               project="Vibee"

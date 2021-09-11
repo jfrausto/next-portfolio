@@ -5,6 +5,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import PortfolioSection from '../components/PortfolioSection';
+import SimpleBar from 'simplebar-react';
 
 const Portfolio: React.FC = () => {
 
@@ -20,7 +21,6 @@ const Portfolio: React.FC = () => {
 
         <Box as={Heading} 
           size="xl"
-
           marginBottom="0.75rem" 
           textDecoration="underline crimson"
           color={portColors[colorMode]}
@@ -30,12 +30,12 @@ const Portfolio: React.FC = () => {
         </Box>
         <Box
           // paddingX={6}
-          overflowY="auto"
-          overflowX="hidden"
+          // overflowY="auto"
+          // overflowX="hidden"
           maxH="80vh"
-          maxW="1400px"
+          maxW="1000px"
         >
-          <PortfolioSection/>
+            <PortfolioSection/>
         </Box>
   </>
   )

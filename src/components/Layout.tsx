@@ -16,7 +16,7 @@ const Layout: React.FC = (props) => {
     <Box
       bg={bgColor[colorMode]}
       color={color[colorMode]}
-      overflow="auto"
+      overflowX="hidden"
       fontSize={["sm","md", "lg", "xl"]}
     >
       <DarkModeSwitch />

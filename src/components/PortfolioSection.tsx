@@ -25,7 +25,12 @@ const PortfolioSection: React.FC = () => {
   return (
     <>
       
-      <Wrap spacing="30px" align="center" justify="center" maxW="1000px">
+      <Wrap 
+        spacing="30px" 
+        align="center" 
+        justify="center" 
+        // maxW="1000px"
+      >
           <WrapItem>
             <PortfolioCard 
               project="Vibee"

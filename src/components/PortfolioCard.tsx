@@ -36,7 +36,9 @@ const PortfolioCard:React.FC<PortfolioCardProps> = ({ project, video, prod, code
 
   return (
     <>
-      <Center maxW="460px" p={2}
+      <Center 
+        maxW="460px" 
+        p={2}
       >
         <VStack>
           <Heading size="md">

@@ -11,9 +11,7 @@ import 'simplebar/dist/simplebar.min.css';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Layout>
         <Component {...pageProps} />
-      </Layout> 
     </ChakraProvider>
   )
 }

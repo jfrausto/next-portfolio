@@ -11,7 +11,7 @@ export const Container = (props: FlexProps) => {
       minHeight="100vh"
       direction="column"
       alignItems="center"
-      justifyContent="space-evenly"
+      justifyContent="center"
       // justifyContent="center"
       // bg={bgColor[colorMode]}
       color={color[colorMode]}

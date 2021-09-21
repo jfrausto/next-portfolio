@@ -17,7 +17,8 @@ const AboutMe = () => {
     <>
       <Container
         bg="blue.700"
-        p={1}
+        pt={["11vh", "11vh", "0vh", "0vh"]}
+        id="about"
       >
 
         <Stack

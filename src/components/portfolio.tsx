@@ -4,21 +4,9 @@ import {
   Flex,
   useColorMode,
   Heading,
-  Text,
-  Wrap, 
-  WrapItem 
 } from '@chakra-ui/react';
-import { 
-  vibeeTags, 
-  pubCrawlTags, 
-  learnSquadTags, 
-  burgerTags, 
-  budgetTrackTags,
-  cryptickTags
-} from '../components/ProjectTags'
-
-import PortfolioCard from '../components/PortfolioCard';
-import PortfolioSection from '../components/PortfolioSection';
+import { Container } from './Container';
+import PortfolioSection from './PortfolioSection';
 import SimpleBar from 'simplebar-react';
 
 const Portfolio: React.FC = () => {
@@ -33,10 +21,12 @@ const Portfolio: React.FC = () => {
 
   return (
     <>
-
+      <Container
+        id="work"
+      >
         <Box as={Heading} 
           size="xl"
-          marginBottom="0.75rem" 
+          marginBottom="2rem" 
           textDecoration="underline crimson"
           color={portColors[colorMode]}
           paddingTop={1}
@@ -44,9 +34,6 @@ const Portfolio: React.FC = () => {
           Projects
         </Box>
         <Flex
-          // paddingX={6}
-          // overflowY="auto"
-          // overflowX="hidden"
           maxH="80vh"
           maxW="1000px"
           alignItems="center"
@@ -63,6 +50,7 @@ const Portfolio: React.FC = () => {
           </SimpleBar>  
 
         </Flex>
+      </Container>
   </>
   )
 }

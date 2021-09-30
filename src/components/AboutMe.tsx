@@ -16,7 +16,7 @@ const AboutMe = () => {
   return (
     <>
       <Container
-        bg="blue.700"
+        // bg="blue.700"
         pt={["11vh", "11vh", "0vh", "0vh"]}
         id="about"
       >

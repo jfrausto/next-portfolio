@@ -1,6 +1,8 @@
 import { Heading, Box, Container, Wrap, WrapItem, Button, List, ListIcon, ListItem, useColorMode } from '@chakra-ui/react'
 import React from 'react';
 import { FaGithub, FaLinkedin, FaGoogle, FaCheckCircle, FaWrench, FaHandshake } from "react-icons/fa";
+import {Container as MyContainer} from './Container'
+
 
 const Contact: React.FC = () => {
 
@@ -18,6 +20,9 @@ const Contact: React.FC = () => {
 
   return (
     <>
+    <MyContainer
+      id="contact"
+    >
     <Box
       // justifyContent="flex-start"
       // justifyItems="flex-start"
@@ -84,6 +89,7 @@ const Contact: React.FC = () => {
         </Wrap>
       </Container>
     </Box>
+    </MyContainer>
 
     </>
   )

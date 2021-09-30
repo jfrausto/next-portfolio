@@ -4,6 +4,8 @@ import { Hero } from '../components/Hero';
 // import {Flex, Text, Spacer} from '@chakra-ui/react';
 import FixedNavBar from '../components/FixedNavBar';
 import { Container } from '../components/Container';
+import Portfolio from '../components/portfolio';
+import Contact from '../components/contact';
 
 const Index: React.FC = () => (
   <>
@@ -12,30 +14,14 @@ const Index: React.FC = () => (
     
   {/* three containers 100vh each */}
     <Container
-      bg="green.700"
+      // bg="green.700"
       id="hero"
     >
       <Hero />
     </Container>
     <AboutMe />
-    <Container
-      bg="red.700"
-      id="work"
-    >
-
-    </Container>
-    <Container
-      bg="red.200"
-      id="contact"
-    >
-
-    </Container>
-
-
-
-
-
-
+    <Portfolio />
+    <Contact/>
   </>
 )
 

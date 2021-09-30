@@ -15,6 +15,7 @@ const FixedNavBar = () => {
         justifyContent="space-evenly"
         direction="row"
         bg="gray.100"
+        zIndex={99}
       >
         <Link
           mr={3}

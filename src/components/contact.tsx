@@ -1,4 +1,6 @@
-import { Heading, Box, Container, Wrap, WrapItem, Button, List, ListIcon, ListItem, useColorMode } from '@chakra-ui/react'
+import { Heading, Flex, Text,
+  Box, Container, Wrap, WrapItem, Button, 
+  List, ListIcon, ListItem, useColorMode } from '@chakra-ui/react'
 import React from 'react';
 import { FaGithub, FaLinkedin, FaGoogle, FaCheckCircle, FaWrench, FaHandshake } from "react-icons/fa";
 import {Container as MyContainer} from './Container'
@@ -23,7 +25,111 @@ const Contact: React.FC = () => {
     <MyContainer
       id="contact"
     >
-    <Box
+
+      {/* header */}
+      <Flex
+        // flexFlow="column wrap"
+        flexDirection="column"
+        flexWrap="wrap"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Heading>
+          lets work together
+        </Heading> 
+      </Flex>
+
+      {/* takeaways section */}
+      <Flex
+        flexDirection="row"
+        flexWrap="wrap"
+        justifyContent="space-evenly"
+        alignItems="center"
+        alignContent="space-around"
+        // height
+        // width
+      >
+        {/* takeaway card */}
+        <Flex
+          flexDirection="column"
+          flexWrap="wrap"
+          justifyContent="space-around"
+          alignItems="center"
+          // height
+          // width
+        >
+          {/* large icon */}
+          {/* some text here: key point */}
+          <Text>
+          </Text>
+        </Flex>
+      </Flex>
+
+      {/* testimonial section */}
+      <Flex
+        flexDirection="column"
+        flexWrap="wrap"
+        justifyContent="space-around"
+        alignItems="center"
+        // height
+          // width
+      >
+        {/* testimonial cards */}
+        <Flex
+          flexDirection="row"
+          flexWrap="wrap"
+          justifyContent="space-around"
+          alignItems="center"
+          alignContent="center"
+          // height
+          // width
+        >
+          {/* photo circle */}
+
+          {/* quote
+            order={2} to reverse the middle order
+          */}
+
+        </Flex>
+
+      </Flex>
+
+
+      {/* contact buttons section */}
+      <Flex
+        flexDirection="row"
+        flexWrap="wrap"
+        alignContent="space-around"
+        justifyContent="center"
+        alignItems="center"
+      >
+
+      {/* buttons */}
+      {/* buttons */}
+      {/* buttons */}
+      </Flex>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {/* <Box
       // justifyContent="flex-start"
       // justifyItems="flex-start"
     >
@@ -40,10 +146,10 @@ const Contact: React.FC = () => {
           >
             Want to work together?
           </Heading>
-      </Box>
+      </Box> */}
     
     
-      <Box
+      {/* <Box
         maxW="1400px"
         marginX="auto"
       >
@@ -56,17 +162,17 @@ const Contact: React.FC = () => {
           <ListItem color={fontColors[colorMode]}>
             <ListIcon as={FaWrench} color={iconColors[colorMode]} />
             I'm able to quickly learn new technologies and apply their core principles to projects efficiently. 
-          </ListItem>
-          <ListItem color={fontColors[colorMode]}>
+          </ListItem> */}
+          {/* <ListItem color={fontColors[colorMode]}>
             <ListIcon as={FaHandshake} color={iconColors[colorMode]} />
             I love making new relationships and working with people of all walks of life. Let's work and create something great!
-          </ListItem>
+          </ListItem> */}
           {/* You can also use custom icons from react-icons */}
-        </List>
-        </Container>
-      </Box>
+        {/* </List> */}
+        {/* </Container> */}
+      {/* </Box> */}
 
-      <Container 
+      {/* <Container 
         mt={8}
         marginX="auto"
       >
@@ -87,8 +193,8 @@ const Contact: React.FC = () => {
           </Button>
           </WrapItem>
         </Wrap>
-      </Container>
-    </Box>
+      </Container> */}
+    {/* </Box> */}
     </MyContainer>
 
     </>

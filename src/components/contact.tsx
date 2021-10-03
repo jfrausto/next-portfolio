@@ -1,9 +1,10 @@
-import { Heading, Flex, Text,
+import { Heading, Flex, Text, Icon,
   Box, Container, Wrap, WrapItem, Button, 
   List, ListIcon, ListItem, useColorMode } from '@chakra-ui/react'
 import React from 'react';
 import { FaGithub, FaLinkedin, FaGoogle, FaCheckCircle, FaWrench, FaHandshake } from "react-icons/fa";
 import {Container as MyContainer} from './Container'
+import Takeaways from './Takeaways';
 
 
 const Contact: React.FC = () => {
@@ -24,6 +25,10 @@ const Contact: React.FC = () => {
     <>
     <MyContainer
       id="contact"
+      // ! make this responsive to dial it in
+      pt={[20, 12, 10, 0]}
+      // !
+      justifyContent="space-evenly"
     >
 
       {/* header */}
@@ -33,37 +38,15 @@ const Contact: React.FC = () => {
         flexWrap="wrap"
         justifyContent="center"
         alignItems="center"
+        bg="blue.100"
+        p={2}
       >
         <Heading>
           lets work together
         </Heading> 
       </Flex>
-
-      {/* takeaways section */}
-      <Flex
-        flexDirection="row"
-        flexWrap="wrap"
-        justifyContent="space-evenly"
-        alignItems="center"
-        alignContent="space-around"
-        // height
-        // width
-      >
-        {/* takeaway card */}
-        <Flex
-          flexDirection="column"
-          flexWrap="wrap"
-          justifyContent="space-around"
-          alignItems="center"
-          // height
-          // width
-        >
-          {/* large icon */}
-          {/* some text here: key point */}
-          <Text>
-          </Text>
-        </Flex>
-      </Flex>
+      
+      <Takeaways />
 
       {/* testimonial section */}
       <Flex

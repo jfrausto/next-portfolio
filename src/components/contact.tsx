@@ -1,10 +1,11 @@
 import { Heading, Flex, Text, Icon,
   Box, Container, Wrap, WrapItem, Button, 
-  List, ListIcon, ListItem, useColorMode } from '@chakra-ui/react'
+  List, ListIcon, ListItem, useColorMode, Avatar } from '@chakra-ui/react'
 import React from 'react';
 import { FaGithub, FaLinkedin, FaGoogle, FaCheckCircle, FaWrench, FaHandshake } from "react-icons/fa";
 import {Container as MyContainer} from './Container'
 import Takeaways from './Takeaways';
+import Testimonials from './Testimonials';
 
 
 const Contact: React.FC = () => {
@@ -45,38 +46,8 @@ const Contact: React.FC = () => {
           lets work together
         </Heading> 
       </Flex>
-      
       <Takeaways />
-
-      {/* testimonial section */}
-      <Flex
-        flexDirection="column"
-        flexWrap="wrap"
-        justifyContent="space-around"
-        alignItems="center"
-        // height
-          // width
-      >
-        {/* testimonial cards */}
-        <Flex
-          flexDirection="row"
-          flexWrap="wrap"
-          justifyContent="space-around"
-          alignItems="center"
-          alignContent="center"
-          // height
-          // width
-        >
-          {/* photo circle */}
-
-          {/* quote
-            order={2} to reverse the middle order
-          */}
-
-        </Flex>
-
-      </Flex>
-
+      <Testimonials />
 
       {/* contact buttons section */}
       <Flex

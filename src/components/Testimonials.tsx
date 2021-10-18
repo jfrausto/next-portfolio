@@ -10,6 +10,7 @@ const Testimonials = () => {
         flexWrap="wrap"
         justifyContent="space-around"
         alignItems="center"
+        bg="blue.300"
         // height
           // width
       >

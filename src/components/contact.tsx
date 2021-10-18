@@ -2,10 +2,11 @@ import { Heading, Flex, Text, Icon,
   Box, Container, Wrap, WrapItem, Button, 
   List, ListIcon, ListItem, useColorMode, Avatar } from '@chakra-ui/react'
 import React from 'react';
-import { FaGithub, FaLinkedin, FaGoogle, FaCheckCircle, FaWrench, FaHandshake } from "react-icons/fa";
 import {Container as MyContainer} from './Container'
+import ContactHeading from './ContactHeading';
 import Takeaways from './Takeaways';
 import Testimonials from './Testimonials';
+import ContactButtons from './ContactButtons';
 
 
 const Contact: React.FC = () => {
@@ -32,36 +33,12 @@ const Contact: React.FC = () => {
       justifyContent="space-evenly"
     >
 
-      {/* header */}
-      <Flex
-        // flexFlow="column wrap"
-        flexDirection="column"
-        flexWrap="wrap"
-        justifyContent="center"
-        alignItems="center"
-        bg="blue.100"
-        p={2}
-      >
-        <Heading>
-          lets work together
-        </Heading> 
-      </Flex>
+      <ContactHeading />
       <Takeaways />
       <Testimonials />
 
       {/* contact buttons section */}
-      <Flex
-        flexDirection="row"
-        flexWrap="wrap"
-        alignContent="space-around"
-        justifyContent="center"
-        alignItems="center"
-      >
-
-      {/* buttons */}
-      {/* buttons */}
-      {/* buttons */}
-      </Flex>
+      <ContactButtons/>
 
 
 

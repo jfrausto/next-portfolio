@@ -9,7 +9,7 @@ const FixedNavBar = () => {
         top={0}
         pt={1}
         px={[1,4,8,32]}
-        minHeight="10vh"
+        minHeight="7vh"
         width="100vw"
         alignItems="center"
         justifyContent="space-evenly"

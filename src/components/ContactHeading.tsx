@@ -15,7 +15,7 @@ const ContactHeading: React.FC = () => {
       >
         <Heading>
           lets work together
-        </Heading> 
+        </Heading>
       </Flex>
     </>
   )

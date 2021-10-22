@@ -13,12 +13,10 @@ const ContactButtons = () => {
         justifyContent="space-evenly"
         alignItems="center"
         w="75vw"
-        h="20vh"
+        h="17vh"
         bg="blue.500"
       >
-
         {/* buttons */}
-
         <Button  as="a"
           target="_blank" 
           variant="outline" 

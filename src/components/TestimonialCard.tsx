@@ -13,20 +13,28 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ imgSrc, firstAndLastN
       <Flex
         flexDirection={flexDirection}
         flexWrap="wrap"
-        justifyContent="space-around"
+        justifyContent="space-evenly"
         alignItems="center"
         alignContent="center"
         // height
         // width
       >
         {/* photo circle */}
-        <Avatar mx={6} name={firstAndLastName} size="2xl" src={imgSrc} />
+        <Avatar 
+          mx={6} 
+          name={firstAndLastName} 
+          size="xl" 
+          // size="2xl" 
+          src={imgSrc} 
+        />
 
         {/* quote
           order={2} to reverse the middle order
         */}
         <Text
-          fontSize="2xl"
+          // fontSize="2xl"
+          fontSize={["sm", "md", "lg", "xl"]}
+          maxW={["50vw", "50vw", "60vw", "65vw"]}
         >
           This foo is quite possibly the sweetest ever. He is such a pleasure to work with.
         </Text>

@@ -23,10 +23,12 @@ const Portfolio: React.FC = () => {
     <>
       <Container
         id="work"
+        bg="#C0C0C0"
+        // boxShadow="0 0 10px"
       >
         <Box as={Heading} 
           size="xl"
-          marginBottom="2rem" 
+          marginBottom="4rem" 
           textDecoration="underline crimson"
           color={portColors[colorMode]}
           paddingTop={1}
@@ -35,15 +37,23 @@ const Portfolio: React.FC = () => {
         </Box>
         <Flex
           maxH="80vh"
-          maxW="1000px"
+          maxW="1100px"
           alignItems="center"
           justifyContent="center"
+          bg="#EDF2F7"
+          borderRadius="7%"
+          // boxShadow="inset 10px 3px 5px 5px #000000"
         >
           <SimpleBar 
             style={{  
-              maxHeight: "65vh", 
-              minWidth: "70vw", 
-              overflowX: "hidden" 
+              maxHeight: "67vh", 
+              minWidth: "73vw", 
+              overflowX: "hidden",
+              backgroundColor: "#F7FAFC",
+              borderRadius: "7%",
+              boxShadow: "inset 0 0 10px",
+              padding: "5px"
+              // scrollMarginRight: "10px"
             }}
           >
           <PortfolioSection/>

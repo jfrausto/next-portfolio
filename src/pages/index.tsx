@@ -16,6 +16,8 @@ const Index: React.FC = () => (
     <Container
       // bg="green.700"
       id="hero"
+      bg="#C0C0C0"
+      // boxShadow="0px 0px 10px"
     >
       <Hero />
     </Container>

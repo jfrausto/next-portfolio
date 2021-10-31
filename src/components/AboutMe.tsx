@@ -18,6 +18,7 @@ const AboutMe = () => {
       <Container
         // bg="blue.700"
         pt={["11vh", "11vh", "0vh", "0vh"]}
+        bg="gray.50"
         id="about"
       >
 

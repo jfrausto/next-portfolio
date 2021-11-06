@@ -34,15 +34,21 @@ const AboutMe = () => {
             justifyContent="center"
             alignItems="center"
             maxW={["50vw","45vw", "30vw", "28vw" ]}
+            borderRadius="100%"
+            bg="linear-gradient(#e66465, #9198e5)"
+            
           >
             <ChakraImage
               justifyContent="center"
               justifyItems="center"
               alignContent="center"
-              src='/static/images/jesse_shopped_cropped.jpg'
+              // public\static\images\jesse-transparent-discord
+              src='/static/images/jesse-transparent-discord.png'
               objectFit="contain"
-              borderRadius="full"
+              borderRadius="100%"
               alt="it's me!"
+              bg="linear(to-l, crimson, dodgerblue)"
+
               />
             </Flex>
           <VStack 

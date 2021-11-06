@@ -35,6 +35,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ imgSrc, firstAndLastN
           // fontSize="2xl"
           fontSize={["sm", "md", "lg", "xl"]}
           maxW={["50vw", "50vw", "60vw", "65vw"]}
+          fontStyle="italic"
         >
           This foo is quite possibly the sweetest ever. He is such a pleasure to work with.
         </Text>

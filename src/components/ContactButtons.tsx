@@ -14,7 +14,7 @@ const ContactButtons = () => {
         alignItems="center"
         w="75vw"
         h="17vh"
-        bg="blue.500"
+        // bg="blue.500"
       >
         {/* buttons */}
         <Button  as="a"

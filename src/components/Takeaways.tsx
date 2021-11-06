@@ -7,12 +7,13 @@ const Takeaways: React.FC = () => {
   return (
     <>
       <Flex
+        my={["30px", "50px", "90px", "90px"]}
         flexDirection="row"
         flexWrap="wrap"
         justifyContent="space-evenly"
         alignItems="center"
         alignContent="space-around"
-        bg="blue.200"
+        // bg="blue.200"
         // height
         w="75vw"
       >

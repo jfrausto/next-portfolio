@@ -27,9 +27,9 @@ const Portfolio: React.FC = () => {
         // boxShadow="0 0 10px"
       >
         <Box as={Heading} 
-          size="xl"
+          size="3xl"
           marginBottom="4rem" 
-          textDecoration="underline crimson"
+          // textDecoration="underline crimson"
           color={portColors[colorMode]}
           paddingTop={1}
           >
@@ -50,8 +50,8 @@ const Portfolio: React.FC = () => {
               minWidth: "73vw", 
               overflowX: "hidden",
               backgroundColor: "#F7FAFC",
-              borderRadius: "7%",
-              boxShadow: "inset 0 0 10px",
+              borderRadius: "7px",
+              // boxShadow: "inset 0 0 10px",
               padding: "5px"
               // scrollMarginRight: "10px"
             }}

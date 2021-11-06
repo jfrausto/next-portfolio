@@ -22,8 +22,9 @@ const Testimonials = () => {
 
         <Heading
           size="xl"
+          pb={6}
         >
-          Testimonials
+          testimonials
         </Heading>
 
         <TestimonialCard 

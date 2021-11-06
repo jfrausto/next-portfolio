@@ -6,7 +6,7 @@ import {Container as MyContainer} from './Container'
 import ContactHeading from './ContactHeading';
 import Takeaways from './Takeaways';
 import Testimonials from './Testimonials';
-import ContactButtons from './ContactButtons';
+import ContactCard from './ContactCard';
 
 
 const Contact: React.FC = () => {
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
       <Testimonials />
 
       {/* contact buttons section */}
-      <ContactButtons/>
+      <ContactCard/>
 
 
 

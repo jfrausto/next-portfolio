@@ -23,7 +23,8 @@ const Portfolio: React.FC = () => {
     <>
       <Container
         id="work"
-        bg="#C0C0C0"
+        // bg="#C0C0C0"
+        bg="red.900"
         // boxShadow="0 0 10px"
       >
         <Box as={Heading} 
@@ -40,7 +41,7 @@ const Portfolio: React.FC = () => {
           maxW="1100px"
           alignItems="center"
           justifyContent="center"
-          bg="#EDF2F7"
+          // bg="#EDF2F7"
           borderRadius="7%"
           // boxShadow="inset 10px 3px 5px 5px #000000"
         >
@@ -49,7 +50,7 @@ const Portfolio: React.FC = () => {
               maxHeight: "67vh", 
               minWidth: "73vw", 
               overflowX: "hidden",
-              backgroundColor: "#F7FAFC",
+              backgroundColor: "#2D3748",
               borderRadius: "7px",
               // boxShadow: "inset 0 0 10px",
               padding: "5px"

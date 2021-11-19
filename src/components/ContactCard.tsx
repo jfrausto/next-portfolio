@@ -23,9 +23,10 @@ const ContactCard = () => {
         {/* buttons */}
         <Flex
           p={8}
-          bg="gray.200"
+          bg="gray.700"
           borderRadius="md"
           h="65%"
+          // w="30%"
           flexDirection="column"
           alignContent="flex-start"
           justifyContent="space-evenly"

@@ -14,7 +14,7 @@ const FixedNavBar = () => {
         alignItems="center"
         justifyContent="space-evenly"
         direction="row"
-        bg="gray.50"
+        bg="gray.800"
         zIndex={99}
         boxShadow="0 0 4px"
       >

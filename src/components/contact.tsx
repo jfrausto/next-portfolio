@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
       pt={[20, 16, 10, 10]}
       // !
       justifyContent="space-evenly"
-      bg="gray.50"
+      // bg="gray.50"
     >
 
       <ContactHeading />

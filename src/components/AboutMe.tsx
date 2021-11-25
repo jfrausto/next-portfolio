@@ -11,6 +11,7 @@ import {
 import AboutMeTags from './AboutMeTags';
 import QuickFactsSection from './QuickFactsSection';
 import { Container } from './Container';
+import AboutMeTabs from './AboutMeTabs';
 
 const AboutMe = () => {
   return (
@@ -24,7 +25,7 @@ const AboutMe = () => {
 
         <Stack
           as={Center}
-          direction={["column", "column", "row", "row"]}
+          direction={["column", "column", "column", "row"]}
           justifyContent="center"
           justifyItems="center"
           p={2}
@@ -33,8 +34,8 @@ const AboutMe = () => {
             direction={["column", "column", "row", "row"]}
             justifyContent="center"
             alignItems="center"
-            maxW={["50vw","45vw", "30vw", "28vw" ]}
-            borderRadius="100%"
+            maxW={["70vw","70vw", "70vw", "43vw" ]}
+            borderRadius="3%"
             bg="linear-gradient(#e66465, #9198e5)"
             
           >
@@ -45,13 +46,15 @@ const AboutMe = () => {
               // public\static\images\jesse-transparent-discord
               src='/static/images/jesse-transparent-discord.png'
               objectFit="contain"
-              borderRadius="100%"
+              borderRadius="3%"
               alt="it's me!"
               bg="linear(to-l, crimson, dodgerblue)"
 
               />
             </Flex>
-          <VStack 
+
+            <AboutMeTabs />
+          {/* <VStack 
             justifyContent="center"
             pl={2}
           >
@@ -83,7 +86,7 @@ const AboutMe = () => {
               <QuickFactsSection />
 
               </Box>
-          </VStack>
+          </VStack> */}
         </Stack>
     </Container>
 

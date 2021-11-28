@@ -13,6 +13,7 @@ const AboutMeTabs = () => {
         // it will be the container stacked next to my pfp
         justifyContent="center"
         alignItems="center"
+        p={5}
         //  h={8}
         // minH="600px"
         w={["80vw", "75vw", "60vw", "40vw"]}
@@ -105,7 +106,6 @@ const AboutMeTabs = () => {
                 -- Quick Facts --
               </Heading>
               
-              <QuickFactsSection />
 
               </Box>
           </VStack>

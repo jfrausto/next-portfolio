@@ -35,7 +35,7 @@ const QuickFactsSection: React.FC = () => {
             snippet={"Cryptos, Music Production"}
           />
         </WrapItem>
-        <WrapItem>
+        {/* <WrapItem>
           <QuickFacts 
             icon={FaTv}
             heading={"Now Watching"}
@@ -48,7 +48,7 @@ const QuickFactsSection: React.FC = () => {
             heading={"Favorite Cuisines"}
             snippet={"Korean, Mexican, Japanese"}
           />
-        </WrapItem>
+        </WrapItem> */}
       </Wrap>
     </>
   )

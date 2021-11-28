@@ -31,27 +31,56 @@ const AboutMe = () => {
           p={2}
         >
           <Flex
-            direction={["column", "column", "row", "row"]}
+            flexDirection="column"
+            wrap="nowrap"
             justifyContent="center"
+            alignContent="center"
             alignItems="center"
-            maxW={["70vw","70vw", "70vw", "43vw" ]}
-            borderRadius="3%"
-            bg="linear-gradient(#e66465, #9198e5)"
-            
+            borderRadius="md"
+            p={5}
+            // h="100vh"
+            maxW={["70vw","70vw", "70vw", "37vw" ]}
+            bg="gray.700"
           >
-            <ChakraImage
+            {/* image container */}
+            <Flex
+              // direction={["column", "column", "row", "row"]}
+              direction="column"
               justifyContent="center"
-              justifyItems="center"
-              alignContent="center"
-              // public\static\images\jesse-transparent-discord
-              src='/static/images/jesse-transparent-discord.png'
-              objectFit="contain"
+              alignItems="center"
+              maxW={["70vw","70vw", "70vw", "37vw" ]}
               borderRadius="3%"
-              alt="it's me!"
-              bg="linear(to-l, crimson, dodgerblue)"
+              bg="linear-gradient(#e66465, #9198e5)"
+              
+            >
+              <ChakraImage
+                justifyContent="center"
+                justifyItems="center"
+                alignContent="center"
+                // public\static\images\jesse-transparent-discord
+                src='/static/images/jesse-transparent-discord.png'
+                objectFit="contain"
+                borderRadius="3%"
+                alt="it's me!"
+                bg="linear(to-l, crimson, dodgerblue)"
 
               />
             </Flex>
+
+            {/* Details Card container */}
+            <Flex
+              borderRadius="md"
+              bg="gray.700"
+              p={4}
+              m={4}
+              // minH="400px"
+              maxW="400px"
+            >
+              <QuickFactsSection />
+            </Flex>
+
+
+          </Flex>
 
             <AboutMeTabs />
           {/* <VStack 

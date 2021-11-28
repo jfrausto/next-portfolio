@@ -1,6 +1,8 @@
 import React from 'react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel,
-  Flex, Box, Heading, VStack, Text } from "@chakra-ui/react";
+  Flex, Box, Heading, VStack, Text, Grid,
+  UnorderedList, ListItem
+ } from "@chakra-ui/react";
 import QuickFactsSection from './QuickFactsSection';
 import AboutMeTags from './AboutMeTags';
 
@@ -13,7 +15,8 @@ const AboutMeTabs = () => {
         // it will be the container stacked next to my pfp
         justifyContent="center"
         alignItems="center"
-        p={5}
+        p={2}
+        borderRadius="md"
         //  h={8}
         // minH="600px"
         w={["80vw", "75vw", "60vw", "40vw"]}
@@ -21,20 +24,26 @@ const AboutMeTabs = () => {
         bg="blue.500"
       >
 
-        <Tabs isFitted variant="soft-rounded">
-          <TabList>
-            <Tab>me</Tab>
-            <Tab>quick facts</Tab>
+        <Tabs w="100%" isFitted variant="soft-rounded" bg="green.700">
+          <TabList
+            mx={4}
+            px={2}
+          >
+            <Tab px={2} mx={2}>me</Tab>
+            <Tab px={2} mx={2}>technical</Tab>
           </TabList>
 {/* put a box in each panel and make height equal */}
-          <TabPanels>
-            <TabPanel>
+          <TabPanels
+            // bg="red.400"
+          >
+            <TabPanel
+            >
               <Flex
                 // h={["75vh", "75vh", "55vh", "55vh"]}
                 // w={["75vw", "75vw", "53vw", "55vw"]}
                 flexFlow="column nowrap"
                 // h="80%"
-                minH="520px"
+                minH="460px"
                 // maxH={["", "510px"]}
               >
 
@@ -70,45 +79,165 @@ const AboutMeTabs = () => {
               </Text>
               </Flex>
             </TabPanel>
-            <TabPanel>
-              {/* <p>two!</p> */}
-              <VStack 
-            justifyContent="center"
-            // minH={["70vh", "70vh", "55vh", "55vh"]}
-            // h="80%"
-            minH="520px"
-
-            // w={["75vw", "75vw", "53vw", "55vw"]}
-            pl={2}
-          >
-            <Box
-              // maxW="50ch"
+            <TabPanel
             >
-              <Heading textDecoration="underline crimson" pb={2} textAlign={["center", "center", "left", "left"]}>
-                Nice to meet you!
-              </Heading>
-              <Heading 
-                mb={3}
-                textAlign={["center", "center", "left", "left"]}
-                textDecoration="italic" as="h3" size="sm"
+              {/* <p>two!</p> */}
+              <Flex 
+                direction="column"
+                justifyContent="flex-start"
+                alignItems="center"
+                minH="460px"
+                // w="80%"
               >
-                -- Technical Skills --
-              </Heading>
+                <Heading 
+                  // mb={3}
+                  textAlign={["center", "center", "left", "left"]}
+                  textDecoration="italic" as="h3" size="sm"
+                >
+                  Skills
+                </Heading>
 
-              <AboutMeTags />
+                <Grid templateColumns="repeat(2, 1fr)" 
+                  gap={5} 
+                  bg="gray.100" 
+                  p={4} 
+                  minW="300px"
+                >
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3} 
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        React
+                      </ListItem>
+                    </UnorderedList>
 
-              <Heading 
-                mt={3}
-                mb={1}
-                textAlign={["center", "center", "left", "left"]}
-                textDecoration="italic" as="h3" size="sm"
-              >
-                -- Quick Facts --
-              </Heading>
-              
+                  </Flex>
 
-              </Box>
-          </VStack>
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3}
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        Javascript
+                      </ListItem>
+                    </UnorderedList>
+
+                  </Flex>
+
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3}  
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        Typescript
+                      </ListItem>
+                    </UnorderedList>
+
+                  </Flex>
+
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3}  
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        MongoDB
+                      </ListItem>
+                    </UnorderedList>
+
+                  </Flex>
+
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3}  
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        NodeJs
+                      </ListItem>
+                    </UnorderedList>
+
+                  </Flex>
+
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3}  
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        Express
+                      </ListItem>
+                    </UnorderedList>
+                  </Flex>
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3} 
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        Chakra UI
+                      </ListItem>
+                    </UnorderedList>
+                  </Flex>
+                  <Flex 
+                    w="100%" 
+                    direction="column" 
+                    justifyContent="center" 
+                    alignItems="flex-start"
+                    pl={3}  
+                    h="10" 
+                    bg="blue.500"
+                  >
+                    <UnorderedList>
+                      <ListItem>
+                        socket.io
+                      </ListItem>
+                    </UnorderedList>
+                  </Flex>
+                </Grid>
+              {/* <AboutMeTags /> */}
+
+            
+              </Flex>
             </TabPanel>
           </TabPanels>
         </Tabs>

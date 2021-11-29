@@ -21,6 +21,7 @@ const AboutMe = () => {
         pt={["11vh", "11vh", "0vh", "0vh"]}
         // bg="gray.50"
         id="about"
+        pb={8}
       >
 
         <Stack
@@ -28,6 +29,7 @@ const AboutMe = () => {
           direction={["column", "column", "column", "row"]}
           justifyContent="center"
           justifyItems="center"
+          alignItems="center"
           p={2}
         >
           <Flex
@@ -37,10 +39,13 @@ const AboutMe = () => {
             alignContent="center"
             alignItems="center"
             borderRadius="md"
-            p={5}
+            p={4}
+            mr={["0", "0", "0", "20"]}
+            mb={["8", "8", "8", "0"]}
             // h="100vh"
-            maxW={["70vw","70vw", "70vw", "37vw" ]}
-            bg="gray.700"
+            maxW={["80vw","70vw", "60vw", "37vw" ]}
+            bg="blue.900"
+            minH="460px"
           >
             {/* image container */}
             <Flex
@@ -48,9 +53,10 @@ const AboutMe = () => {
               direction="column"
               justifyContent="center"
               alignItems="center"
-              maxW={["70vw","70vw", "70vw", "37vw" ]}
+              maxW={["70vw","60vw", "37vw", "24vw" ]}
               borderRadius="3%"
               bg="linear-gradient(#e66465, #9198e5)"
+              m={6}
               
             >
               <ChakraImage
@@ -63,6 +69,7 @@ const AboutMe = () => {
                 borderRadius="3%"
                 alt="it's me!"
                 bg="linear(to-l, crimson, dodgerblue)"
+                // p={4}
 
               />
             </Flex>
@@ -70,11 +77,12 @@ const AboutMe = () => {
             {/* Details Card container */}
             <Flex
               borderRadius="md"
-              bg="gray.700"
-              p={4}
-              m={4}
+              // bg="red.500"
+              bg="blue.700"
+              p={3}
+              m={2}
               // minH="400px"
-              maxW="400px"
+              maxW="420px"
             >
               <QuickFactsSection />
             </Flex>
@@ -82,7 +90,28 @@ const AboutMe = () => {
 
           </Flex>
 
-            <AboutMeTabs />
+
+          <Flex
+              // this container needs a responsive set width and height 
+              // for justify and align items to take effect
+              // it will be the container stacked next to my pfp
+              justifyContent="center"
+              alignItems="center"
+              p={3}
+              
+              // ml={["0", "0", "0", "10"]}
+              // ml={}
+              // marginLeft={["0", "0", "0", "10px"]}
+              borderRadius="md"
+              //  h={8}
+              // minH="600px"
+              // w={["80vw", "75vw", "60vw", "40vw"]}
+              width={["80vw", "70vw", "60vw", "30vw"]}
+              //  w={8}
+              bg="blue.900"
+            >
+              <AboutMeTabs />
+            </Flex>
           {/* <VStack 
             justifyContent="center"
             pl={2}

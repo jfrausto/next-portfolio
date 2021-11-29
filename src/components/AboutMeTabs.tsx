@@ -6,35 +6,43 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel,
 import QuickFactsSection from './QuickFactsSection';
 import AboutMeTags from './AboutMeTags';
 
-const AboutMeTabs = () => {
+const AboutMeTabs: React.FC = () => {
+
+  const techSkills: String[] = [
+    "JavaScript", "TypeScript", "React", "Next.js",
+    "HTML", "CSS", "Framer Motion",
+    "Webpack", "Express", "MongoDB",
+    "Socket.io", "JQuery", "MySQL",
+    "Bootstrap", "MAterialize", "Chakra UI",
+    "Firebase"
+  ];
+
   return (
     <>
-      <Flex
-        // this container needs a responsive set width and height 
-        // for justify and align items to take effect
-        // it will be the container stacked next to my pfp
-        justifyContent="center"
-        alignItems="center"
-        p={2}
-        borderRadius="md"
-        //  h={8}
-        // minH="600px"
-        w={["80vw", "75vw", "60vw", "40vw"]}
-        //  w={8}
-        bg="blue.500"
-      >
-
-        <Tabs w="100%" isFitted variant="soft-rounded" bg="green.700">
+        <Tabs 
+          w="100%" 
+          isFitted 
+          variant="soft-rounded" 
+          colorScheme="facebook"
+          pt={3}
+          // bg="black"
+          // bg="green.700"
+          // mx="auto"
+        >
           <TabList
-            mx={4}
+            // mx={4}
             px={2}
+            maxWidth={["60vw", "50vw", "40vw", "17vw"]}
+            // bg="black"
+            mx="auto"
           >
-            <Tab px={2} mx={2}>me</Tab>
-            <Tab px={2} mx={2}>technical</Tab>
+            <Tab mr={4}>me</Tab>
+            <Tab ml={4}>technical</Tab>
           </TabList>
 {/* put a box in each panel and make height equal */}
           <TabPanels
             // bg="red.400"
+            pt={2}
           >
             <TabPanel
             >
@@ -43,12 +51,17 @@ const AboutMeTabs = () => {
                 // w={["75vw", "75vw", "53vw", "55vw"]}
                 flexFlow="column nowrap"
                 // h="80%"
-                minH="460px"
+                // minH="460px"
+                // maxH="460px"
+                h="460px"
+                pl={4}
                 // maxH={["", "510px"]}
+                overflowY="auto"
               >
 
               <Text
                 fontSize="sm"
+                maxW="90%"
               > 
                 Welcome! I’m from East Los Angeles, California and I love coding, creating, and exploring the web. 
                 I have a passion for building intuitive applications that are useful and fun to navigate. 
@@ -58,6 +71,8 @@ const AboutMeTabs = () => {
               <br/>
               <Text
                 fontSize="sm"
+                maxW="90%"
+
               >
                 When I work with a team my role is best described as a "glue" guy. 
                 I like to keep morale and productivity high by looking at the bright side of things to keep the team together. 
@@ -68,6 +83,8 @@ const AboutMeTabs = () => {
 
               <Text
                 fontSize="sm"
+                maxW="90%"
+
               >
                 The bottom line is I love to solve problems. 
                 I live for those "Aha!" breakthrough moments! 
@@ -98,151 +115,40 @@ const AboutMeTabs = () => {
                 </Heading>
 
                 <Grid templateColumns="repeat(2, 1fr)" 
-                  gap={5} 
-                  bg="gray.100" 
-                  p={4} 
-                  minW="300px"
+                  // gap={1} 
+                  columnGap={["4", "6", "8", "12"]}
+                  // bg="gray.100" 
+                  p={2} 
+                  // minW="380px"
                 >
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3} 
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        React
-                      </ListItem>
-                    </UnorderedList>
+                  
+                  {
+                    techSkills.map( (skill) => {
+                      return (<Flex 
+                        w="100%" 
+                        direction="column" 
+                        justifyContent="center" 
+                        alignItems="flex-start"
+                        pl={3} 
+                        h="10" 
+                        // bg="blue.500"
+                      >
+                        <UnorderedList>
+                          <ListItem>
+                            {skill}
+                          </ListItem>
+                        </UnorderedList>
 
-                  </Flex>
-
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3}
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        Javascript
-                      </ListItem>
-                    </UnorderedList>
-
-                  </Flex>
-
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3}  
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        Typescript
-                      </ListItem>
-                    </UnorderedList>
-
-                  </Flex>
-
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3}  
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        MongoDB
-                      </ListItem>
-                    </UnorderedList>
-
-                  </Flex>
-
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3}  
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        NodeJs
-                      </ListItem>
-                    </UnorderedList>
-
-                  </Flex>
-
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3}  
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        Express
-                      </ListItem>
-                    </UnorderedList>
-                  </Flex>
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3} 
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        Chakra UI
-                      </ListItem>
-                    </UnorderedList>
-                  </Flex>
-                  <Flex 
-                    w="100%" 
-                    direction="column" 
-                    justifyContent="center" 
-                    alignItems="flex-start"
-                    pl={3}  
-                    h="10" 
-                    bg="blue.500"
-                  >
-                    <UnorderedList>
-                      <ListItem>
-                        socket.io
-                      </ListItem>
-                    </UnorderedList>
-                  </Flex>
+                      </Flex>)
+                    }
+                    )
+                  }
                 </Grid>
-              {/* <AboutMeTags /> */}
-
-            
               </Flex>
             </TabPanel>
           </TabPanels>
         </Tabs>
 
-      </Flex>
     </>
   )
 }

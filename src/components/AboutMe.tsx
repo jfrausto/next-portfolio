@@ -19,6 +19,7 @@ const AboutMe = () => {
         pt={["11vh", "11vh", "0vh", "0vh"]}
         id="about"
         pb={8}
+        mb={48}
       >
         <Stack
           as={Center}
@@ -27,33 +28,46 @@ const AboutMe = () => {
           justifyItems="center"
           alignItems="center"
           p={2}
+          // bg="red.800"
         >
 
           <Flex
             flexDirection="column"
             wrap="nowrap"
-            justifyContent="center"
-            alignContent="center"
+            justifyContent="space-around"
+            // alignContent="center"
             alignItems="center"
             borderRadius="md"
-            p={4}
-            mr={["0", "0", "0", "20"]}
+            // p={4}
+            mr={["0", "0", "0", "28"]}
             mb={["8", "8", "8", "0"]}
-            maxW={["80vw","70vw", "60vw", "37vw" ]}
-            bg="blue.900"
+            maxW={["80vw","70vw", "65vw", "37vw" ]}
+            // bg="blue.900"
             minH="460px"
           >
+            <Heading
+              pt={4}
+              size="4xl"
+              mb={12}
+            >
+              Hi there!
+            </Heading>
             <Headshot />
             <QuickFactsSection />
           </Flex>
 
           <Flex
+            position={"relative"}
+            top={4}
             justifyContent="center"
             alignItems="center"
             p={3}
+            pt={2}
+            // mt={16}
             borderRadius="md"
-            width={["80vw", "70vw", "60vw", "30vw"]}
-            bg="blue.900"
+            maxWidth={["80vw", "70vw", "70vw", "550px"]}
+            // bg="blue.900"
+            bg="gray.700"
           >
             <AboutMeTabs />
           </Flex>

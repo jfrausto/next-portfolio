@@ -5,7 +5,7 @@ export const Hero = ({ title }: { title: string }) => (
     justifyContent="center"
     alignItems="center"
     height="100vh"
-    bgGradient="linear(to-l, #e66465, #9198e5)"
+    bgGradient="radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(148,187,233,1) 100%)"
     // bg="linear-gradient(#e66465, #9198e5)"
 
     bgClip="text"

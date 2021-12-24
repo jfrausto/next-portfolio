@@ -17,18 +17,21 @@ const TechnicalSkills = () => {
       <Flex 
         direction="column"
         justifyContent="flex-start"
-        alignItems="center"
-        minH="460px"
+        alignItems="flex-start"
+        minH="560px"
+        pl={[1, 2 ,3, 4]}
+        
       >
         <Heading 
-          textAlign={["center", "center", "left", "left"]}
-          textDecoration="italic" as="h3" size="sm"
+          size="lg"
+          mb={4}
         >
-          Skills
+          experience with
         </Heading>
         <Grid templateColumns="repeat(2, 1fr)" 
-          columnGap={["4", "6", "8", "12"]}
-          p={2} 
+          columnGap={["4", "6", "32", "32"]}
+          rowGap={[4,4,4,4]}
+          p={1} 
         >
           {
             techSkills.map( (skill) => {
@@ -37,7 +40,7 @@ const TechnicalSkills = () => {
                 direction="column" 
                 justifyContent="center" 
                 alignItems="flex-start"
-                pl={3} 
+                pl={[0, 3,3,3]} 
                 h="10"
                 key={skill}
               >

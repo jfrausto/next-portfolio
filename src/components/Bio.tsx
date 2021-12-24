@@ -1,15 +1,23 @@
 import React from 'react';
-import {Flex, Text} from '@chakra-ui/react'
+import {Flex, Text, Heading} from '@chakra-ui/react'
 
 const Bio = () => {
   return (
     <>
       <Flex
+        w="100%"
         flexFlow="column nowrap"
-        h="460px"
-        pl={4}
+        minH="560px"
+        pl={[1, 2 ,3, 4]}
         overflowY="auto"
       >
+
+      <Heading
+        size="lg"
+        mb={4}
+      >
+        a little about me
+      </Heading>
       <Text
         fontSize="sm"
         maxW="90%"

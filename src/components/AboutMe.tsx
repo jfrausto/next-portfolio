@@ -41,7 +41,7 @@ const AboutMe = () => {
             // p={4}
             mr={["0", "0", "0", "28"]}
             mb={["8", "8", "8", "0"]}
-            maxW={["80vw","70vw", "65vw", "37vw" ]}
+            maxW={["84vw","70vw", "65vw", "37vw" ]}
             // bg="blue.900"
             minH="460px"
           >
@@ -61,11 +61,11 @@ const AboutMe = () => {
             top={4}
             justifyContent="center"
             alignItems="center"
-            p={3}
+            p={[1,3,3,3]}
             pt={2}
             // mt={16}
             borderRadius="md"
-            maxWidth={["80vw", "70vw", "70vw", "550px"]}
+            maxWidth={["84vw", "70vw", "70vw", "550px"]}
             // bg="blue.900"
             bg="gray.700"
           >

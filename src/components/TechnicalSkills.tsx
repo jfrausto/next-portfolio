@@ -1,16 +1,8 @@
 import React from 'react';
-import {Flex, Heading, Grid, UnorderedList, ListItem } from '@chakra-ui/react'
+import {Flex, Heading, Grid, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { techSkillsWithIcon } from './TechSkillsAndIcons';
 
-const TechnicalSkills = () => {
-
-  const techSkills: string[] = [
-    "JavaScript", "TypeScript", "React", "Next.js",
-    "HTML", "CSS", "Framer Motion",
-    "Webpack", "Express", "MongoDB",
-    "Socket.io", "JQuery", "MySQL",
-    "Bootstrap", "MAterialize", "Chakra UI",
-    "Firebase"
-  ];
+const TechnicalSkills: React.FC = () => {
 
   return (
     <>
@@ -20,7 +12,6 @@ const TechnicalSkills = () => {
         alignItems="flex-start"
         minH="560px"
         pl={[1, 2 ,3, 4]}
-        
       >
         <Heading 
           size="lg"
@@ -29,26 +20,27 @@ const TechnicalSkills = () => {
           experience with
         </Heading>
         <Grid templateColumns="repeat(2, 1fr)" 
-          columnGap={["4", "6", "32", "32"]}
+          columnGap={[4,16,32,32]}
           rowGap={[4,4,4,4]}
           p={1} 
         >
           {
-            techSkills.map( (skill) => {
+            techSkillsWithIcon.map( (elem) => {
               return (<Flex 
                 w="100%" 
                 direction="column" 
                 justifyContent="center" 
                 alignItems="flex-start"
-                pl={[0, 3,3,3]} 
+                pl={[0, 3,3,5]} 
                 h="10"
-                key={skill}
+                key={elem.skill}
               >
-                <UnorderedList>
+                <List>
                   <ListItem>
-                    {skill}
+                    <ListIcon as={elem.icon} boxSize={6} mb={-1} color="gray.200"/>
+                    {elem.skill}
                   </ListItem>
-                </UnorderedList>
+                </List>
               </Flex>)
             }
             )

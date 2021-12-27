@@ -35,7 +35,7 @@ const QuickFacts: React.FC<QuickFactsProps> = ({icon, heading, snippet}) => {
         justifyContent={"flex-start"}
         alignItems={"center"}
       >
-        <Icon as={icon} w={8} h={8} mt={2} />
+        <Icon as={icon} w={6} h={6} mt={2} />
         <Flex
           ml={3}
           direction={"column"}

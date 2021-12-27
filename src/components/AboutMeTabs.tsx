@@ -13,11 +13,11 @@ const AboutMeTabs: React.FC = () => {
     <>
         <Tabs 
           // w="100%"
-          width={["350px", "500px" ,"550px", "550px"]}
+          width={["360px", "500px" ,"550px", "550px"]}
           // minWidth={"550px"}
           isFitted 
           // variant="soft-rounded"
-          variant="solid-rounded"
+          variant="line"
           // colorScheme="facebook"
           colorScheme={"red"}
           pt={3}

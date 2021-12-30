@@ -16,11 +16,12 @@ const AboutMe = () => {
   return (
     <>
       <Container
-        pt={["11vh", "11vh", "0vh", "0vh"]}
+        pt={["11vh", "11vh", "7vh", "7vh"]}
         id="about"
         pb={8}
         mb={48}
       >
+        {/* responsive stack stack */}
         <Stack
           as={Center}
           direction={["column", "column", "column", "row"]}
@@ -28,33 +29,37 @@ const AboutMe = () => {
           justifyItems="center"
           alignItems="center"
           p={2}
-          // bg="red.800"
         >
+
+          {/* left side */}
 
           <Flex
             flexDirection="column"
             wrap="nowrap"
             justifyContent="space-around"
-            // alignContent="center"
             alignItems="center"
             borderRadius="md"
-            // p={4}
             mr={["0", "0", "0", "28"]}
             mb={["8", "8", "8", "0"]}
             maxW={["84vw","70vw", "65vw", "37vw" ]}
-            // bg="blue.900"
             minH="460px"
           >
             <Heading
-              pt={4}
+              p={4}
+              px={16}
               size="4xl"
               mb={12}
+              borderRadius={"full"}
+              bg="#db5757"
+              
             >
               Hi there!
             </Heading>
             <Headshot />
             <QuickFactsSection />
           </Flex>
+
+          {/* right side */}
 
           <Flex
             position={"relative"}
@@ -63,10 +68,8 @@ const AboutMe = () => {
             alignItems="center"
             p={[1,3,3,3]}
             pt={2}
-            // mt={16}
             borderRadius="md"
             maxWidth={["84vw", "70vw", "70vw", "550px"]}
-            // bg="blue.900"
             bg="gray.700"
           >
             <AboutMeTabs />

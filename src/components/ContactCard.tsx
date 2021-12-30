@@ -9,18 +9,16 @@ const ContactCard = () => {
     <>
       <Flex
         flexDirection="column"
-        // flexWrap="wrap"
         alignContent="space-around"
         justifyContent="space-evenly"
         alignItems="center"
         w="75vw"
         h="50vh"
-        // bg="blue.500"
       >
         <Heading>
           contact me
         </Heading>
-        {/* buttons */}
+        {/* links */}
         <Flex
           p={8}
           bg="gray.700"
@@ -99,37 +97,6 @@ const ContactCard = () => {
           </Flex>
 
         </Flex>
-        {/* <Button  as="a"
-          target="_blank" 
-          variant="outline" 
-          href="https://github.com/jfrausto" 
-          textTransform="lowercase" 
-          leftIcon={<FaGithub />}
-        >
-          Github
-        </Button> */}
-        {/* buttons */}
-{/* 
-        <Button  as="a"
-          target="_blank" 
-          variant="outline" 
-          href="https://www.linkedin.com/in/jesse-f-9182331ab/" 
-          textTransform="lowercase" 
-          leftIcon={<FaLinkedin />}
-        >
-          Linkedin
-        </Button> */}
-        {/* buttons */}
-
-        {/* <Button as="a"
-          target="_blank" 
-          variant="outline" 
-          href="mailto:fraustojesse24@gmail.com" 
-          textTransform="lowercase" 
-          leftIcon={<FaGoogle />}
-        >
-          fraustojesse24@gmail.com
-        </Button> */}
       </Flex>
     </>
   )

@@ -13,11 +13,9 @@ const Takeaways: React.FC = () => {
         justifyContent="space-evenly"
         alignItems="center"
         alignContent="space-around"
-        // bg="blue.200"
-        // height
         w="75vw"
       >
-        {/* takeaway card */}
+        {/* 3 takeaway card */}
         <TakeawayCard
           icon={FaLightbulb}
           cardText="I think outside the box. 

@@ -21,6 +21,8 @@ const Index: React.FC = () => (
     >
       <Hero />
     </Container>
+
+    
     <AboutMe />
     <Portfolio />
     <Contact/>

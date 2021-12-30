@@ -12,23 +12,33 @@ const AboutMeTabs: React.FC = () => {
   return (
     <>
         <Tabs 
-          // w="100%"
           width={["360px", "500px" ,"550px", "550px"]}
-          // minWidth={"550px"}
           isFitted 
-          // variant="soft-rounded"
-          variant="line"
-          // colorScheme="facebook"
+          variant="soft-rounded"
           colorScheme={"red"}
           pt={3}
+          color={"gray.100"}
         >
           <TabList
-            // px={1}
             maxWidth={["60vw", "50vw", "40vw", "17vw"]}
             mx="auto"
           >
-            <Tab mr={4} boxSize={16} fontSize={19}>me</Tab>
-            <Tab ml={4} boxSize={16} fontSize={19}>technical</Tab>
+            <Tab 
+              mr={4} 
+              boxSize={16} 
+              fontSize={19} 
+              
+            >
+              me
+            </Tab>
+            <Tab 
+              mr={4} 
+              boxSize={16} 
+              fontSize={19} 
+            >
+              technical
+            </Tab>
+            
           </TabList>
           <TabPanels
             pt={2}

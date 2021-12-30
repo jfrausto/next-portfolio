@@ -11,11 +11,12 @@ const QuickFactsSection: React.FC = () => {
         borderRadius={"md"}
         p={[1, 3, 3, 4]}
         px={[2, 4, 8, 8]}
-        // templateColumns={"180px 190px"}
         templateColumns={["162px 162px", "180px 190px", "200px 210x", "200px 210x"]}
         templateRows={"65px 65px"}
         columnGap={["0px", "5px", "30px", "30px"]}
         rowGap={"5px"}
+        color={"gray.100"}
+        
       >
         <QuickFacts 
           icon={FaHome}

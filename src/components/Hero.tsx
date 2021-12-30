@@ -9,11 +9,12 @@ export const Hero = ({ title }: { title: string }) => (
     // bg="linear-gradient(#e66465, #9198e5)"
 
     bgClip="text"
+    maxW="70vw"
   >
-    <Heading fontSize={["2xl", "2xl", "4xl", "6xl"]} textAlign="center">{title}</Heading>
+    <Heading fontSize={["6xl", "6xl", "8xl", "8xl"]} textAlign="left">{title}</Heading>
   </Flex>
 )
 
 Hero.defaultProps = {
-  title: 'Hi, my name is jesse frausto. I\'m a full-stack web developer.',
+  title: 'Jesse Frausto. \nFull-Stack Web Developer.',
 }

@@ -1,13 +1,9 @@
 import React from 'react';
 import {
-  Box,
   Flex,
-  useColorMode,
   Heading,
 } from '@chakra-ui/react';
 import { Container } from './Container';
-import PortfolioSection from './PortfolioSection';
-import SimpleBar from 'simplebar-react';
 import ProjectCard from './ProjectCard';
 import { 
   vibeeTags, 
@@ -40,29 +36,23 @@ const Portfolio: React.FC = () => {
     <>
       <Container
         id="work"
-        // bg="#C0C0C0"
-        // bg="red.900"
-        // boxShadow="0 0 10px"
       >
-        <Box as={Heading} 
-          size="3xl"
+        <Heading
+          p={4}
+          px={16}
+          size="4xl"
           marginBottom="4rem" 
-          // textDecoration="underline crimson"
-          // color={portColors[colorMode]}
-          paddingTop={1}
+        bg={"#5695dc"}
+        borderRadius={"full"}
+          
           >
           Projects
-        </Box>
+        </Heading>
         <Flex
-          // maxH="80vh"
           maxW="1600px"
           alignItems="center"
           justifyContent="center"
           wrap={"wrap"}
-          // bg="red.800"
-          // bg="#EDF2F7"
-          // borderRadius="7%"
-          // boxShadow="inset 10px 3px 5px 5px #000000"
         >
             <ProjectCard 
               project="Vibee"
@@ -112,21 +102,6 @@ const Portfolio: React.FC = () => {
               tags={cryptickTags}
               desc={description.cryptick}
             />
-          {/* <SimpleBar 
-            style={{  
-              maxHeight: "67vh", 
-              minWidth: "73vw", 
-              overflowX: "hidden",
-              backgroundColor: "#2D3748",
-              borderRadius: "7px",
-              // boxShadow: "inset 0 0 10px",
-              padding: "5px"
-              // scrollMarginRight: "10px"
-            }}
-          >
-          <PortfolioSection/>
-          </SimpleBar>   */}
-
         </Flex>
       </Container>
   </>

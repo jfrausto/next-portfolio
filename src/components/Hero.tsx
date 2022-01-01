@@ -9,9 +9,10 @@ export const Hero = ({ title }: { title: string }) => (
     // bg="linear-gradient(#e66465, #9198e5)"
 
     bgClip="text"
-    maxW="70vw"
+    // maxW="70vw"
+    maxW={["70vw", "50vw", "60vw", "50vw"]}
   >
-    <Heading fontSize={["6xl", "6xl", "8xl", "8xl"]} textAlign="left">{title}</Heading>
+    <Heading fontSize={["5xl", "6xl", "8xl", "8xl"]} textAlign={["center", "center", "center", "center"]}>{title}</Heading>
   </Flex>
 )
 

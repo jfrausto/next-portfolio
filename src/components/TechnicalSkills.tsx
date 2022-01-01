@@ -10,7 +10,7 @@ const TechnicalSkills: React.FC = () => {
         direction="column"
         justifyContent="flex-start"
         alignItems="flex-start"
-        minH="560px"
+        minH="590px"
         pl={[1, 2 ,3, 4]}
       >
         <Heading 

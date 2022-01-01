@@ -36,23 +36,29 @@ const Portfolio: React.FC = () => {
     <>
       <Container
         id="work"
+        pt={20}
+        pb={20}
       >
         <Heading
           p={4}
-          px={16}
+          // px={16}
           size="4xl"
-          marginBottom="4rem" 
-        bg={"#5695dc"}
-        borderRadius={"full"}
+          marginBottom="2rem" 
+        // bg={"#5695dc"}
+        // borderRadius={"full"}
           
           >
-          Projects
+          projects
         </Heading>
         <Flex
           maxW="1600px"
           alignItems="center"
           justifyContent="center"
           wrap={"wrap"}
+          // bg="red.600"
+          // bgClip={"content-box"}
+          // bgClip={"content-box"}
+          // zIndex={0}
         >
             <ProjectCard 
               project="Vibee"

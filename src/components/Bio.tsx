@@ -7,7 +7,7 @@ const Bio = () => {
       <Flex
         w="100%"
         flexFlow="column nowrap"
-        minH="560px"
+        minH="590px"
         pl={[1, 2 ,3, 4]}
         overflowY="auto"
       >

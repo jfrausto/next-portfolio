@@ -27,7 +27,7 @@ const Takeaways: React.FC = () => {
         />
         <TakeawayCard
           icon={FaHandshake}
-          cardText="I love making new relationships and working with people of all walks of life. Let's create something great!"
+          cardText="I love building new relationships and working with people of all walks of life. Let's create something great!"
         />
       </Flex>
     </>

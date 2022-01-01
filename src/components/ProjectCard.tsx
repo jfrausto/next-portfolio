@@ -21,11 +21,17 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ project, video, prod, code, ta
         flexDirection="column"
         justifyContent="flex-start"
         alignItems="flex-start"
+        // zIndex={3}
+        // bg="transparent"
+        backgroundImage={"linear-gradient(45deg, rgba(78,94,162,1) 0%, rgba(45,98,181,1) 13%, rgba(31,92,157,1) 30%, rgba(14,62,156,1) 69%, rgba(0,14,55,1) 100%)"}
+        backgroundAttachment={"fixed"}
+        backgroundSize={"cover"}
         // sx={{ 
         //   gap: '20px'
         // }}
+        borderRadius={"2xl"}
         maxW={['80vw', '500px', '500px', '500px']}
-        bg="gray.700"
+        // bg="gray.700"
         p={3}
         m={4}
       >
@@ -63,7 +69,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ project, video, prod, code, ta
           {/* </LinkOverlay> */}
 
           {/* <LinkOverlay href={prod}> */}
-            <Button rightIcon={<ExternalLinkIcon/>} colorScheme={'green'} as='a' href={prod}>
+            <Button rightIcon={<ExternalLinkIcon/>} colorScheme={'blue'} as='a' href={prod}>
               visit app
             </Button>
           {/* </LinkOverlay> */}

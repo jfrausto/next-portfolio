@@ -14,7 +14,7 @@ const AboutMeTabs: React.FC = () => {
         <Tabs 
           width={["360px", "500px" ,"550px", "550px"]}
           isFitted 
-          variant="soft-rounded"
+          variant="solid-rounded"
           colorScheme={"red"}
           pt={3}
           color={"gray.100"}

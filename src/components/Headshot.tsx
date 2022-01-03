@@ -14,7 +14,9 @@ const Headshot = () => {
       >
         {/* bg gradient on bg box; image is a .png */}
         <Box
-          bg="radial-gradient(circle, rgba(238,174,174,0.55) 5%, rgba(148,187,233,0.80) 75%)"
+          // bg="radial-gradient(circle, rgba(238,174,174,0.55) 5%, rgba(148,187,233,0.80) 75%)"
+          // bg="radial-gradient(circle, rgba(238,174,174,0.45) 5%, rgba(78,94,162,0.75) 75%)"
+          bg="radial-gradient(circle, rgba(238,174,174,0.45) 5%, rgba(66,77,110,0.75) 75%)"
           borderRadius="50%"
         >
           <ChakraImage

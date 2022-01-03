@@ -14,9 +14,20 @@ const FixedNavBar = () => {
         alignItems="center"
         justifyContent="space-evenly"
         direction="row"
-        bg="gray.800"
+        // bg="radial-gradient(circle, rgba(38,38,38,0.80) 55%, rgba(8,8,8,0.80) 100%)"
+        bg="radial-gradient(circle, rgba(33,33,33,0.80) 55%, rgba(8,8,8,0.80) 100%)"
+        // bg="radial-gradient(circle, rgba(66,77,110,0.80) 55%, rgba(8,8,8,0.80) 100%)"
+        // opacity={"0.95"}
+        // backdropFilter={"auto"}
+        // backdropBlur={"5px"}
+        style={{ 
+          backdropFilter: "blur(15px)"
+        }}
+        // border="1px solid "
+        borderBottom="1px solid #c9c9c9"
+
         zIndex={99}
-        boxShadow="0 0 4px"
+        // boxShadow="0 0 4px"
       >
         <Link
           mr={3}

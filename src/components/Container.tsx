@@ -15,7 +15,8 @@ export const Container = (props: FlexProps) => {
       // justifyContent="center"
       // bg={bgColor[colorMode]}
       color={color[colorMode]}
-      bg="gray.900"
+      // bg="gray.900"
+      bg="#080808"
       {...props}
     />
   )

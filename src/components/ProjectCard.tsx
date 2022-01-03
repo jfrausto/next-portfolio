@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Heading, Text, LinkBox, Box, 
+import { chakra, Flex, Heading, Text, LinkBox, Box, 
   List, ListItem, ListIcon, ButtonGroup, Button } from '@chakra-ui/react';
 import { SettingsIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 import { FaGithub } from 'react-icons/fa';
@@ -21,9 +21,12 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ project, video, prod, code, ta
         flexDirection="column"
         justifyContent="flex-start"
         alignItems="flex-start"
-        // zIndex={3}
+        // zIndex={3} rgba(14,62,156,1) rgba(14,62,156,1) rgba(31,92,157,1) rgba(45,98,181,1) rgba(78,94,162,1)
         // bg="transparent"
-        backgroundImage={"linear-gradient(45deg, rgba(78,94,162,1) 0%, rgba(45,98,181,1) 13%, rgba(31,92,157,1) 30%, rgba(14,62,156,1) 69%, rgba(0,14,55,1) 100%)"}
+        // backgroundImage={"linear-gradient(45deg, rgba(14,62,156,1) 0%, rgba(14,62,156,1) 43%, rgba(31,92,157,1) 60%, rgba(45,98,181,1) 69%, rgba(78,94,162,1) 100%)"}
+        // backgroundImage={"radial-gradient(circle, rgba(78,94,162,0.95) 12%, rgba(66,77,110,0.75) 65%)"}
+        backgroundImage={"linear-gradient(48deg, rgba(66,77,110,0.65) 28%, rgba(78,94,162,0.75) 49%, rgba(66,77,110,0.65) 72%)"}
+        // backgroundImage={"radial-gradient(circle, rgba(138,177,233,0.650) 12%, rgba(66,77,110,0.75) 65%)"}
         backgroundAttachment={"fixed"}
         backgroundSize={"cover"}
         // sx={{ 
@@ -46,14 +49,19 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ project, video, prod, code, ta
           </video>
         </Box>
 
-        <Text m={2}>
+        <Text m={2} pb={4} pl={1.5}>
           {desc}
         </Text>
 
         <List mx={3} my={1}>
-          <ListItem>
-            <ListIcon as={SettingsIcon} />
-            {tags}
+          <ListItem pl={1} pb={2}>
+            <ListIcon as={SettingsIcon} boxSize={[5,6,6,6]} />
+            <chakra.span
+              position={"relative"}
+              top={[-0.5,-1,-1,-1]}
+              left={1}
+            >{tags}</chakra.span>
+            {/* <Text mt={0.5}>{tags}</Text> */}
           </ListItem>
         </List>
 
@@ -61,6 +69,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ project, video, prod, code, ta
           variant="solid" 
           m={3}
           spacing={['3', '5', '5', '5']}
+          // pl={1}
         >
           {/* <LinkOverlay href={code}> */}
             <Button leftIcon={<FaGithub />} as='a' href={code} >

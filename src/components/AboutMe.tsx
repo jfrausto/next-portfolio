@@ -75,10 +75,13 @@ const AboutMe = () => {
             p={[1,3,3,3]}
             pt={2}
             borderRadius="2xl"
+            // border="1px solid #c9c9c9"
             maxWidth={["84vw", "70vw", "70vw", "550px"]}
             // bg="linear-gradient(43deg, rgba(205,30,30,0.75) 0%, rgba(199,79,79,0.75) 93%)"
             // bg="radial-gradient(circle, rgba(40,25,25,0.80) 15%, rgba(101,0,0,0.78) 100%)"
-            bg="radial-gradient(circle, rgba(101,0,0,0.78) 15%, rgba(40,25,25,0.90) 100%)"
+            // bg="radial-gradient(circle, rgba(101,0,0,0.78) 15%, rgba(40,25,25,0.90) 100%)"
+            bg="radial-gradient(circle, rgba(208,138,138,0.25) 0%, rgba(66,77,110,0.70) 80%)"
+
             // bg="linear-gradient(45deg, rgba(40,25,25,0.80) 0%, rgba(101,0,0,0.78) 100%)"
           >
             <AboutMeTabs />

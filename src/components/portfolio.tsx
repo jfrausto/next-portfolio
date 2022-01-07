@@ -24,12 +24,12 @@ const Portfolio: React.FC = () => {
   //   dark: "brand.100"
   // }
   const description = {
-    vibee: "a social media app that allows you to analyze your words and choose from songs that could match your mood. Post your mood, song, and words for interesting combinations so the world can see!",
-    pubCrawl: "an application that plans a night out for you! Just choose your city and a list of bars, pubs, and restaurants will display with a map on how to get to each one. Allows customization of the type of establishments you would like to visit.",
-    learningSquad: "a fast paced trivia game. Pick a squad, and take a quiz from 6 different categories. Earn enough cash, and you will be able to mark your territory on a map in the name of your squad!",
-    burgerDB: "an application where you can create a burger, put it on an eating list. You then devour it putting it on the 'In' list. Showcases SQL executions.",
-    budgetTracker: "a simple, useful budget tracking application. Input your withdrawals and deposits to watch your wealth fluctuate with a graph",
-    cryptick: "a minimalistic price ticker for crypto currencies. Quickly check current and recent info of your favorite cryptos"
+    vibee: "A social media app that analyzes used words in your 'tweet-style' post, and suggests songs that could match your mood. Post your mood, song, and 'vibe' for interesting combinations so the world can see! Uses Genius lyrics API.",
+    pubCrawl: "An app that plans a night out for you when you just can't decide! Just choose your city, then a random list of bars and restaurants will be automatically routed. Allows customization of the type of establishments you would like to visit.",
+    learningSquad: "A fast paced trivia game. Pick a squad, and take a quiz from 6 different categories. Earn enough 'cash', and you will be able to color your territory on a grid map in the name of your squad! Uses a public 'Jeopardy!' data set.",
+    burgerDB: "An application where you can create a burger, put it on an eating list. You then devour it putting it on the 'In' list. Showcases SQL executions.",
+    budgetTracker: "A simple, useful budget tracking application. Input your withdrawals and deposits to watch your wealth fluctuate with a fluid chart.",
+    cryptick: "A minimalistic price ticker for crypto currencies. Quickly check current and recent info of your favorite cryptos with a clean and simple interface. Uses the Coinbase API."
   };
 
   return (

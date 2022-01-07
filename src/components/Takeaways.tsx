@@ -13,7 +13,7 @@ const Takeaways: React.FC = () => {
         justifyContent="space-evenly"
         alignItems="center"
         alignContent="space-around"
-        w="75vw"
+        w={["85vw","85vw","85vw" ,"75vw"]}
       >
         {/* 3 takeaway card */}
         <TakeawayCard
@@ -27,7 +27,7 @@ const Takeaways: React.FC = () => {
         />
         <TakeawayCard
           icon={FaHandshake}
-          cardText="I love building new relationships and working with people of all walks of life. Let's create something great!"
+          cardText="I love building relationships and working with people of all walks of life. Let's create something great!"
         />
       </Flex>
     </>

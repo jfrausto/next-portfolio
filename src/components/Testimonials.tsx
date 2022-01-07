@@ -13,16 +13,20 @@ const Testimonials = () => {
         flexWrap="wrap"
         justifyContent="space-around"
         alignItems="center"
+        p={[2,4,4,4]}
         my={["30px", "40px", "40px" ,"50px"]}
-
+        // w={"70vw"}
         // bg="blue.300"
         // height
+        minH={"460px"}
           // width
+          bg={"gray.700"}
+          borderRadius={"2xl"}
       > 
 
         <Heading
           size="xl"
-          pb={6}
+          pb={2}
         >
           testimonials
         </Heading>

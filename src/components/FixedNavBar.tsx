@@ -21,7 +21,7 @@ const FixedNavBar = () => {
         // backdropFilter={"auto"}
         // backdropBlur={"5px"}
         style={{ 
-          backdropFilter: "blur(15px)"
+          backdropFilter: "blur(12px)"
         }}
         // border="1px solid "
         borderBottom="1px solid #c9c9c9"
@@ -52,7 +52,7 @@ const FixedNavBar = () => {
         <Link
         href="#contact"
         >
-          contact
+          connect
         </Link>
       </Flex>
     </>

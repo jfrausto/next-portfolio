@@ -23,7 +23,8 @@ const ContactCard = () => {
           p={8}
           bg="gray.700"
           borderRadius="md"
-          h="65%"
+          // h="69%"
+          h={["280px", "320px", "320px", "320px"]}
           // w="30%"
           flexDirection="column"
           alignContent="flex-start"

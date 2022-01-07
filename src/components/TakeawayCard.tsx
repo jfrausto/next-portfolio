@@ -42,8 +42,9 @@ const TakeawayCard: React.FC<TakeawayCardProps> = ({icon, cardText}) => {
         {/* some text here: key point */}
         <Text
           // maxWidth={["70vw", "50vw", "20vw", "16vw"]}
-          fontSize={["14px", "15px", "16px", "16px"]}
-          // fontSize="14px"
+          fontSize={["17px", "17px", "18px", "18px"]}
+
+          // fontSize="16px"
           // mt={1}
           // pt={2}
           textAlign="center"

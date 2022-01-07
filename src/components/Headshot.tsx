@@ -8,8 +8,9 @@ const Headshot = () => {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        maxW={["70vw","60vw", "45vw", "600px" ]}
-        m={6}
+        // maxW={["85vw","90vw", "55vw", "600px" ]}
+        mx={0}
+        mt={6}
         mb={10}
       >
         {/* bg gradient on bg box; image is a .png */}
@@ -25,8 +26,8 @@ const Headshot = () => {
             alignContent="center"
             src='/static/images/jesse-transparent-discord.png'
             objectFit="cover"
-            height={["300px", "420px", "420px", "420px"]}
-            width={["300px", "420px", "420px", "420px"]}
+            height={["305px", "420px", "420px", "420px"]}
+            width={["305px", "420px", "420px", "420px"]}
             borderRadius="50%"
             alt="it's me!"
           />

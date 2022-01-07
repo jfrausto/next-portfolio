@@ -24,7 +24,7 @@ const FixedNavBar = () => {
           backdropFilter: "blur(12px)"
         }}
         // border="1px solid "
-        borderBottom="1px solid #c9c9c9"
+        borderBottom="1px solid #737373"
 
         zIndex={99}
         // boxShadow="0 0 4px"

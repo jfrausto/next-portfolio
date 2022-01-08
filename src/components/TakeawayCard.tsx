@@ -25,7 +25,8 @@ const TakeawayCard: React.FC<TakeawayCardProps> = ({icon, cardText}) => {
         m={3}
         p={4}
         // py={8}
-        bg={"gray.700"}
+        // bg={"gray.700"}
+        bg={"radial-gradient(circle at 50% 32%, rgba(208,138,138,0.38) 0%, rgba(56,67,100,0.40) 45%), radial-gradient(circle at 50% 75%, rgba(68,79,185,0.85) 0%, rgba(49,60,90,0.40) 50%)"}
         borderRadius={"2xl"}
       >
         {/* large icon */}

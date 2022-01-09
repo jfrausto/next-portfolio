@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -11,12 +11,14 @@ import {
   Button,
   useDisclosure,
   Flex
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
+import { MessageForm } from './MessageForm';
 
 export const MessageModal:React.FC = () => {
 
   const {isOpen, onOpen, onClose} = useDisclosure();
   const finalRef = useRef();
+  const [isValidSend, setValidSend ] = useState(false);
 
   return (
     <>
@@ -38,22 +40,18 @@ export const MessageModal:React.FC = () => {
         finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent
-          minH={"50vh"}
+          minH={"500px"}
+          // maxW={"89vw"}
+          mx={4}
+          top={0}
           // bg={"transparent"}
         >
-          <ModalHeader>Modal Title</ModalHeader>
+          <ModalHeader>Seriously, please say hello!</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>
-              Lorem ipsum dolor sit amet consectetur, 
-              adipisicing elit. 
-              Iusto unde corrupti expedita quis,
-              sunt non delectus in, 
-              facere distinctio reiciendis 
-              nesciunt? Perferendis itaque 
-              necessitatibus quae natus eum 
-              laboriosam numquam eligendi.
-            </Text>
+              <MessageForm 
+                setValidSend={setValidSend}
+              />
           </ModalBody>
 
           <ModalFooter
@@ -64,7 +62,8 @@ export const MessageModal:React.FC = () => {
 
             >
               <Button 
-                colorScheme='green' 
+                isDisabled={!isValidSend}
+                colorScheme='green'
                 mr={3}
                 w={"50%"}
               >

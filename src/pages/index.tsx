@@ -1,76 +1,65 @@
 import React from 'react';
-import {
-  Center,
-  Box,
-  Flex,
-  Stack,
-  VStack,
-  Image as ChakraImage,
-  Heading,
-} from '@chakra-ui/react';
-import AboutMeTags from '../components/AboutMeTags';
-import QuickFactsSection from '../components/QuickFactsSection';
-
+import AboutMe from '../components/AboutMe';
+import { Hero } from '../components/Hero';
+import {Box} from '@chakra-ui/react';
+import FixedNavBar from '../components/FixedNavBar';
+import { Container } from '../components/Container';
+import Portfolio from '../components/portfolio';
+import Contact from '../components/contact';
 
 const Index: React.FC = () => (
   <>
-     <Stack
-        as={Center}
-        direction={["column", "column", "row", "row"]}
-        justifyContent="center"
-        justifyItems="center"
-        p={2}
+    {/* Floating nav here */}
+    <FixedNavBar />
+    
+  {/* three containers 100vh each */}
+    <Container
+      // bg="green.700"
+      id="hero"
+      // bg="red.500"
+      // boxShadow="0px 0px 10px"
+      // direction={"row"}
+      // zIndex={1}
+      // width={"100vw"}
+    >
+      <Box
+        h={"100vh"}
+        w={"50%"}
+        position={"absolute"}
+        top={0}
+        left={0}
+        // bg="gray.700"
+        // bg="linear-gradient(333deg, rgba(12,12,12,1) 60%, rgba(53,80,129,0.91) 60%, rgba(26,33,47,1) 76%)"
+        // bg="radial-gradient(ellipse farthest-corner at 260% 95%, rgba(12,12,12,1) 71%, rgba(53,80,129,0.91) 71%, rgba(26,33,47,1) 78%)"
+        bg="radial-gradient(circle farthest-corner at bottom right, rgba(15,15,30,1) 74%, rgba(53,80,129,0.91) 74%, rgba(26,33,47,1) 86%)"
+        zIndex={2}
       >
-        <Flex
-          direction={["column", "column", "row", "row"]}
-          justifyContent="center"
-          alignItems="center"
-          maxW={["50vw","45vw", "30vw", "28vw" ]}
-        >
-          <ChakraImage
-            justifyContent="center"
-            justifyItems="center"
-            alignContent="center"
-            src='/static/images/jesse_shopped_cropped.jpg'
-            objectFit="contain"
-            borderRadius="full"
-            alt="it's me!"
-            />
-          </Flex>
-        <VStack 
-          justifyContent="center"
-          pl={2}
-        >
-          <Box
-            maxW="50ch"
-          >
-            <Heading textDecoration="underline crimson" pb={2} textAlign={["center", "center", "left", "left"]}>
-              Nice to meet you!
-            </Heading>
-            <Heading 
-              mb={3}
-              textAlign={["center", "center", "left", "left"]}
-              textDecoration="italic" as="h3" size="sm"
-            >
-              -- Technical Skills --
-            </Heading>
+        
+      </Box>
+      <Box
+        h={"100vh"}
+        w={"50%"}
+        // bg="gray.800"
+        // bg="linear-gradient(27deg, rgba(12,12,12,1) 60%, rgba(53,80,129,0.91) 60%, rgba(26,33,47,1) 76%)"
+        // bg="radial-gradient(ellipse farthest-corner at -10% 250%, rgba(12,12,12,1) 60%, rgba(53,80,129,0.91) 60%, rgba(26,33,47,1) 76%)"
+        bg="radial-gradient(circle farthest-corner at bottom left, rgba(15,15,30,1) 74%, rgba(53,80,129,0.91) 74%, rgba(26,33,47,1) 86%)"
+        
+        position={"absolute"}
+        top={0}
+        right={0}
+        zIndex={2}
+        
+      >
 
-            <AboutMeTags />
+      </Box>
 
-            <Heading 
-              mt={3}
-              mb={1}
-              textAlign={["center", "center", "left", "left"]}
-              textDecoration="italic" as="h3" size="sm"
-            >
-              -- Quick Facts --
-            </Heading>
-            
-            <QuickFactsSection />
+      <Hero />
+    </Container>
 
-            </Box>
-        </VStack>
-      </Stack>
+    
+    <AboutMe />
+    <Portfolio />
+    <Contact/>
   </>
 )
 

@@ -36,19 +36,21 @@ const Portfolio: React.FC = () => {
     <>
       <Container
         id="work"
-        pt={20}
-        pb={20}
+        // pt={20}
+        pt={"9vh"}
+
+        pb={10}
       >
         <Heading
-          p={4}
+          // p={4}
           // px={16}
           size="4xl"
-          marginBottom="2rem" 
+          marginBottom="3rem" 
         // bg={"#5695dc"}
         // borderRadius={"full"}
           
           >
-          projects
+          Projects
         </Heading>
         <Flex
           maxW="1600px"

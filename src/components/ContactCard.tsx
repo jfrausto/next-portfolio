@@ -18,13 +18,15 @@ const ContactCard: React.FC = () => {
         minH="600px"
         // bg="blue.600"
       >
-        <Heading>
+        <Heading size={"xl"}>
           Contact Me
         </Heading>
         {/* links */}
         <Flex
           p={8}
-          bg="gray.700"
+          // bg="gray.700"
+          // bg={}
+          bg={"radial-gradient(circle at bottom left, rgba(208,138,138,0.38) 4%,  rgba(56,67,100,0.40) 55%), radial-gradient(circle at top right, rgba(68,79,185,0.55) 5%, rgba(49,60,90,0.40) 65%)"}
           borderRadius="md"
           // h="69%"
           h={["420px", "420px", "420px", "420px"]}
@@ -54,9 +56,6 @@ const ContactCard: React.FC = () => {
             link={"https://chakra-ui.com"}
             text={"Resume"}
           />
-
-          <Spacer/>
-          <MessageModal />
 
         </Flex>
       </Flex>

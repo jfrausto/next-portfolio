@@ -28,7 +28,8 @@ const Contact: React.FC = () => {
     <Container
       id="contact"
       // ! make this responsive to dial it in
-      pt={[20, 16, 10, 10]}
+      // pt={[20, 16, 10, 10]}
+      pt={"9vh"}
       // !
       justifyContent="space-evenly"
     >

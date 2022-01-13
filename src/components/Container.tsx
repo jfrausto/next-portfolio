@@ -18,7 +18,8 @@ export const Container = (props: FlexProps) => {
       // bg="gray.900"
       // bg="#080808"
       // bg="#0c0f1a"
-      bg="#0f0f1e"
+      // bg="#0f0f1e"
+      bg="#111121"
       {...props}
     />
   )

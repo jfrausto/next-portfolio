@@ -11,12 +11,13 @@ export const Hero = ({ title }: { title: string }) => (
     // top={0}
     // right={"50%"}
     // transform={"translateX(50%)"}
-    bgGradient="radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(148,187,233,1) 100%)"
+    // bgGradient="radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(148,187,233,1) 100%)"
+    bg="linear-gradient(rgba(238,208,208,0.58) 19%, rgba(148,187,233,0.70) 50%, rgba(248,248,255,0.80) 73%)"
     // bg="linear-gradient(#e66465, #9198e5)"
-    // bg=""
-    bgClip="text"
+
+    bgClip="text"    // bg=""
     // maxW="70vw"
-    maxW={["70vw", "50vw", "60vw", "50vw"]}
+    maxW={["75vw", "60vw", "60vw", "50vw"]}
     // maxWidth={"100vw"}
     zIndex={3}
   >

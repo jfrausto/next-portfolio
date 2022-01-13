@@ -9,13 +9,13 @@ const FixedNavBar = () => {
         top={0}
         pt={1}
         px={[1,4,8,32]}
-        minHeight="7vh"
+        minHeight="8vh"
         width="100vw"
         alignItems="center"
         justifyContent="space-evenly"
         direction="row"
         // bg="radial-gradient(circle, rgba(38,38,38,0.80) 55%, rgba(8,8,8,0.80) 100%)"
-        bg="radial-gradient(circle, rgba(33,33,33,0.80) 55%, rgba(8,8,8,0.80) 100%)"
+        bg="radial-gradient(circle, rgba(23,23,41,0.80) 55%, rgba(8,8,10,0.95) 100%)"
         // bg="radial-gradient(circle, rgba(66,77,110,0.80) 55%, rgba(8,8,8,0.80) 100%)"
         // opacity={"0.95"}
         // backdropFilter={"auto"}

@@ -27,7 +27,7 @@ const ContactCard: React.FC = () => {
           // bg="gray.700"
           // bg={}
           bg={"radial-gradient(circle at bottom left, rgba(208,138,138,0.38) 4%,  rgba(56,67,100,0.40) 55%), radial-gradient(circle at top right, rgba(68,79,185,0.55) 5%, rgba(49,60,90,0.40) 65%)"}
-          borderRadius="md"
+          borderRadius={"2xl"}
           // h="69%"
           h={["420px", "420px", "420px", "420px"]}
           // w="30%"
